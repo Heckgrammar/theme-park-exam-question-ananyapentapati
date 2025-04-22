@@ -27,21 +27,17 @@
             Console.Write("Enter the number of people in the group: ");
             int numberOfPeople = int.Parse(Console.ReadLine());
 
-            // Constants
             int ticketPricePerPerson = 15;
             int discount = 5;
             int totalCharge;
 
-            // Calculate total charge
             totalCharge = numberOfPeople * ticketPricePerPerson;
 
-            // Apply discount if group size is 6 or more
             if (numberOfPeople >= 6)
             {
                 totalCharge -= discount;
             }
 
-            // Output the total charge
             Console.WriteLine($"Total charge for the group: £{totalCharge}");
         }
     }
